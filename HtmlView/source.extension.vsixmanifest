@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="HtmlView.MISoftware.57ef93d2-bc83-4264-b2f4-c9a5eb66faa1" Version="1.6" Language="en-US" Publisher="MI Software" />
+        <DisplayName>HtmlView</DisplayName>
+        <Description xml:space="preserve">Provides the HTML editor an area where it shows a preview of your HTML page. Essentially it is a Chrome based browser inside Visual Studio showing your HTML page.</Description>
+        <MoreInfo>http://misoftware.com.br/Home/Post/HtmlView</MoreInfo>
+        <Icon>Resources\icon.png</Icon>
+        <PreviewImage>Resources\preview.png</PreviewImage>
+        <Tags>HTML,HTML5,CSS,JS,CEF,Chrome,Productivity,Preview</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,16.0)" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.6.27309.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>

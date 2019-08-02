@@ -1,0 +1,33 @@
+<!-- HtmlView:on, console:on -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+        body
+        {
+            font-family: sans-serif;
+			box-sizing: border-box;
+        }
+
+		iframe
+		{
+			display: block;
+			width: 100%;
+			height: 300px;
+			border: 0;
+		}
+	</style>
+
+	<script>
+		console.log(!!HtmlView);
+		console.log(HtmlView.active);
+		HtmlView.active = false;
+		console.log(HtmlView.active);
+	</script>
+</head>
+
+<body>
+	<h1>Click the link below to nabigate to anchor.html</h1>
+    <a href="anchor.html">Navigate</a>
+</body>
+</html>
